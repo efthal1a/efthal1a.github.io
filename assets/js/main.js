@@ -41,11 +41,11 @@
 
   /* ---------- Dynamic hero (rotor / showcase / marquee) ---------- */
   const SHOW_ITEMS = [
-    { img: "assets/img/templates/tpl-minoan.svg", key: "sc1" },
-    { img: "assets/img/templates/tpl-water.svg", key: "sc2" },
-    { img: "assets/img/templates/tpl-dryland.svg", key: "sc3" },
-    { img: "assets/img/templates/tpl-senses.svg", key: "sc4" },
-    { img: "assets/img/templates/tpl-renaissance.svg", key: "sc5" }
+    { img: "assets/img/photos/knossos-colonnade.webp", key: "sc1" },
+    { img: "assets/img/photos/generalife-water.webp", key: "sc2" },
+    { img: "assets/img/photos/dry-terraces.webp", key: "sc3" },
+    { img: "assets/img/photos/lavender-senses.webp", key: "sc4" },
+    { img: "assets/img/photos/villa-deste.webp", key: "sc5" }
   ];
   let showIdx = 0, rotorIdx = 0, rotorWords = [], heroStarted = false;
 
@@ -216,12 +216,7 @@
   }
 
   function catLabel(c) {
-    const map = {
-      gardens: window.I18N[lang]["work.f.gardens"],
-      studies: window.I18N[lang]["work.f.studies"],
-      gis: window.I18N[lang]["work.f.gis"]
-    };
-    return map[c] || c;
+    return window.I18N[lang]["work.f." + c] || c;
   }
 
   function renderPosts() {
@@ -451,15 +446,32 @@
     }
   }
 
+  /* ---------- Photo credits (Wikimedia Commons attribution) ---------- */
+  function renderCredits(credits) {
+    const host = $("#creditList");
+    if (!host || !credits.length) return;
+    host.innerHTML = credits
+      .map(
+        (c) =>
+          `<li><a href="${escapeAttr(c.page)}" target="_blank" rel="noopener noreferrer">${escapeHTML(
+            c.file
+          )}</a> — ${escapeHTML(c.author)} · ${escapeHTML(c.license)}</li>`
+      )
+      .join("");
+  }
+
   /* ---------- Init ---------- */
   async function init() {
     initHero();
     buildShowcase();
-    [PROJECTS, POSTS, TEMPLATES] = await Promise.all([
+    let CREDITS;
+    [PROJECTS, POSTS, TEMPLATES, CREDITS] = await Promise.all([
       loadJSON("projects.json"),
       loadJSON("posts.json"),
-      loadJSON("templates.json")
+      loadJSON("templates.json"),
+      loadJSON("credits.json")
     ]);
+    renderCredits(CREDITS);
     applyLang(lang);
     startHero();
     observeReveals();

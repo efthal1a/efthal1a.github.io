@@ -2,7 +2,7 @@
 window.I18N = {
   el: {
     "nav.about": "Προφίλ",
-    "nav.work": "Έργα",
+    "nav.work": "Εμπνεύσεις",
     "nav.ideas": "Ιδέες",
     "nav.templates": "Templates",
     "nav.contact": "Επικοινωνία",
@@ -18,8 +18,8 @@ window.I18N = {
     "hero.chip3": "Αρχιτεκτονική τοπίου",
     "hero.chip4": "GIS & χαρτογράφηση",
     "hero.marquee": "Κήποι αισθήσεων · Βιώσιμη φύτευση · Αρχιτεκτονική τοπίου · GIS · Ξηρικοί κήποι · Ιστορικές εμπνεύσεις · ",
-    "sc1": "Μινωικός κήπος", "sc2": "Κήπος του νερού", "sc3": "Ξηρική πλαγιά", "sc4": "Κήπος των αισθήσεων", "sc5": "Αναγεννησιακή βεράντα",
-    "hero.cta1": "Δες τα έργα",
+    "sc1": "Κνωσός, Κρήτη", "sc2": "Generalife, Γρανάδα", "sc3": "Αναβαθμίδες & ξηρολιθιά", "sc4": "Λεβάντα, κήπος αισθήσεων", "sc5": "Villa d'Este, Τίβολι",
+    "hero.cta1": "Δες τις εμπνεύσεις",
     "hero.cta2": "Ας μιλήσουμε",
     "scroll": "Κύλισε",
 
@@ -40,10 +40,10 @@ window.I18N = {
     "about.tl3t": "Proactive A.E.",
     "about.tl3d": "Εντομολογική ανάλυση για τον έλεγχο του δάκου.",
 
-    "work.eyebrow": "Portfolio",
-    "work.title": "Επιλεγμένα έργα",
-    "work.sub": "Renders και υλοποιήσεις — κήποι, μελέτες και χαρτογραφήσεις GIS.",
-    "work.f.all": "Όλα", "work.f.gardens": "Κήποι", "work.f.studies": "Μελέτες", "work.f.gis": "GIS",
+    "work.eyebrow": "Εμπνεύσεις",
+    "work.title": "Από πού ξεκινάει ο κήπος",
+    "work.sub": "Το κρητικό τοπίο, τα φυτά του και οι τεχνικές που το κράτησαν ζωντανό — οι αναφορές πίσω από κάθε σχεδιασμό.",
+    "work.f.all": "Όλα", "work.f.landscape": "Τοπίο", "work.f.plants": "Φυτά", "work.f.craft": "Τεχνική",
 
     "ideas.eyebrow": "Σημειώσεις",
     "ideas.title": "Ιδέες & φυτά της εποχής",
@@ -67,11 +67,13 @@ window.I18N = {
 
     "footer.tag": "Αρχιτεκτονική τοπίου με ρίζες στην Κρήτη.",
     "footer.rights": "Με επιφύλαξη κάθε δικαιώματος.",
-    "footer.admin": "Διαχείριση"
+    "footer.admin": "Διαχείριση",
+    "credits.title": "Πηγές φωτογραφιών",
+    "credits.note": "Οι φωτογραφίες τοπίων, φυτών και ιστορικών κήπων προέρχονται από το Wikimedia Commons με ελεύθερη άδεια χρήσης (CC / public domain) και αποτελούν αναφορές έμπνευσης, όχι έργα του γραφείου."
   },
   en: {
     "nav.about": "About",
-    "nav.work": "Work",
+    "nav.work": "Inspirations",
     "nav.ideas": "Ideas",
     "nav.templates": "Templates",
     "nav.contact": "Contact",
@@ -87,8 +89,8 @@ window.I18N = {
     "hero.chip3": "Landscape architecture",
     "hero.chip4": "GIS & mapping",
     "hero.marquee": "Sensory gardens · Sustainable planting · Landscape architecture · GIS · Dry gardens · Historic inspirations · ",
-    "sc1": "Minoan garden", "sc2": "Garden of water", "sc3": "Dryland slope", "sc4": "Garden of the senses", "sc5": "Renaissance terrace",
-    "hero.cta1": "See the work",
+    "sc1": "Knossos, Crete", "sc2": "Generalife, Granada", "sc3": "Terraces & dry-stone", "sc4": "Lavender, sensory garden", "sc5": "Villa d'Este, Tivoli",
+    "hero.cta1": "See the inspirations",
     "hero.cta2": "Let's talk",
     "scroll": "Scroll",
 
@@ -109,10 +111,10 @@ window.I18N = {
     "about.tl3t": "Proactive S.A.",
     "about.tl3d": "Entomological analysis for olive fruit fly control.",
 
-    "work.eyebrow": "Portfolio",
-    "work.title": "Selected work",
-    "work.sub": "Renders and built projects — gardens, studies and GIS mapping.",
-    "work.f.all": "All", "work.f.gardens": "Gardens", "work.f.studies": "Studies", "work.f.gis": "GIS",
+    "work.eyebrow": "Inspirations",
+    "work.title": "Where the garden begins",
+    "work.sub": "The Cretan landscape, its plants and the techniques that kept it alive — the references behind every design.",
+    "work.f.all": "All", "work.f.landscape": "Landscape", "work.f.plants": "Plants", "work.f.craft": "Craft",
 
     "ideas.eyebrow": "Notes",
     "ideas.title": "Ideas & plants of the season",
@@ -136,6 +138,8 @@ window.I18N = {
 
     "footer.tag": "Landscape architecture rooted in Crete.",
     "footer.rights": "All rights reserved.",
-    "footer.admin": "Admin"
+    "footer.admin": "Admin",
+    "credits.title": "Photo credits",
+    "credits.note": "Photographs of landscapes, plants and historic gardens come from Wikimedia Commons under free licences (CC / public domain) and serve as references of inspiration, not as works by the studio."
   }
 };

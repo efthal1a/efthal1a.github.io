@@ -8,7 +8,7 @@
     "story_el": "Εμπνευσμένος από τις τοιχογραφίες της Κνωσού, με κρίνα, κρόκους και ίριδες. Ο αρχαιότερος κηποτεχνικός πολιτισμός της Ευρώπης, στον ίδιο σου τον τόπο.",
     "story_en": "Inspired by the frescoes of Knossos, with lilies, crocuses and irises — Europe's oldest garden-making culture, in your own homeland.",
     "files": [],
-    "img": "assets/img/templates/tpl-minoan.svg"
+    "img": "assets/img/photos/knossos-colonnade.webp"
   },
   {
     "id": "tpl-water",
@@ -19,7 +19,7 @@
     "story_el": "Βασισμένος στο Generalife της Αλάμπρα. Η τέχνη του νερού σε ξηρό κλίμα — ένα μάθημα ιδανικό για την Κρήτη.",
     "story_en": "Based on the Generalife of the Alhambra. The art of water in a dry climate — a lesson ideal for Crete.",
     "files": [],
-    "img": "assets/img/templates/tpl-water.svg"
+    "img": "assets/img/photos/generalife-water.webp"
   },
   {
     "id": "tpl-renaissance",
@@ -30,7 +30,7 @@
     "story_el": "Έμπνευση από τη Villa d'Este στο Tivoli. Γεωμετρία, άξονες και προοπτική — η καθαρή τάξη της αρχιτέκτονα.",
     "story_en": "Inspired by Villa d'Este in Tivoli. Geometry, axes and perspective — the architect's pure order.",
     "files": [],
-    "img": "assets/img/templates/tpl-renaissance.svg"
+    "img": "assets/img/photos/villa-deste.webp"
   },
   {
     "id": "tpl-monastic",
@@ -41,7 +41,7 @@
     "story_el": "Αρωματικά και φαρμακευτικά φυτά σε αυστηρή τετράγωνη διάταξη, όπως στους μεσαιωνικούς βοτανικούς κήπους και τις μονές της Κρήτης.",
     "story_en": "Aromatic and medicinal plants in strict square beds, as in medieval botanical gardens and Cretan monasteries.",
     "files": [],
-    "img": "assets/img/templates/tpl-monastic.svg"
+    "img": "assets/img/photos/monastic-beds.webp"
   },
   {
     "id": "tpl-zen",
@@ -52,7 +52,7 @@
     "story_el": "Ζεν μινιμαλισμός εμπνευσμένος από το Ryōan-ji: χαλίκι, πέτρα, ελάχιστο νερό και μέγιστη ηρεμία.",
     "story_en": "Zen minimalism inspired by Ryōan-ji: gravel, stone, minimal water and maximum calm.",
     "files": [],
-    "img": "assets/img/templates/tpl-zen.svg"
+    "img": "assets/img/photos/ryoanji-zen.webp"
   },
   {
     "id": "tpl-english",
@@ -63,7 +63,7 @@
     "story_el": "Ελεγχόμενη «αταξία» εμπνευσμένη από το Sissinghurst: πολυετή φυτά και «δωμάτια» κήπου.",
     "story_en": "Controlled 'wildness' inspired by Sissinghurst: perennials and garden 'rooms'.",
     "files": [],
-    "img": "assets/img/templates/tpl-english.svg"
+    "img": "assets/img/photos/sissinghurst-room.webp"
   },
   {
     "id": "tpl-senses",
@@ -74,7 +74,7 @@
     "story_el": "Πέντε ζώνες, μία για κάθε αίσθηση. Το σήμα κατατεθέν της συλλογής — άρωμα, υφή, χρώμα, ήχος και γεύση.",
     "story_en": "Five zones, one for each sense. The signature of the collection — scent, texture, color, sound and taste.",
     "files": [],
-    "img": "assets/img/templates/tpl-senses.svg"
+    "img": "assets/img/photos/lavender-senses.webp"
   },
   {
     "id": "tpl-dryland",
@@ -85,6 +85,6 @@
     "story_el": "Ξηρολιθιά, ενδημικά φυτά και μηδενικό πότισμα. Βιωσιμότητα βγαλμένη από το ίδιο το κρητικό τοπίο.",
     "story_en": "Dry-stone walls, endemic plants and zero irrigation. Sustainability drawn from the Cretan landscape itself.",
     "files": [],
-    "img": "assets/img/templates/tpl-dryland.svg"
+    "img": "assets/img/photos/dry-terraces.webp"
   }
 ]
