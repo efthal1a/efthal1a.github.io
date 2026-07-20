@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <rect width="800" height="520" fill="#eef0e6"/>
+  <!-- five radiating sense zones from a central node -->
+  <g transform="translate(400,470)">
+    <!-- zone wedges -->
+    <path d="M0 0 L-360 -300 A470 470 0 0 1 -180 -430 Z" fill="#8fa87c"/>
+    <path d="M0 0 L-180 -430 A470 470 0 0 1 40 -468 Z" fill="#a7c957"/>
+    <path d="M0 0 L40 -468 A470 470 0 0 1 240 -400 Z" fill="#c26a41" opacity="0.75"/>
+    <path d="M0 0 L240 -400 A470 470 0 0 1 380 -270 Z" fill="#6ba3b8" opacity="0.8"/>
+    <path d="M0 0 L380 -270 A470 470 0 0 1 400 -230 L0 0 Z" fill="#b06fa0" opacity="0.7"/>
+    <!-- concentric paths -->
+    <g fill="none" stroke="#f7f4ec" stroke-width="4" opacity="0.7"><path d="M-300 -250 A390 390 0 0 1 300 -250"/><path d="M-180 -150 A230 230 0 0 1 180 -150"/></g>
+    <!-- central fountain / heart -->
+    <circle cx="0" cy="-30" r="30" fill="#f7f4ec"/><circle cx="0" cy="-30" r="16" fill="#6ba3b8"/>
+  </g>
+  <!-- little sense icons dotted -->
+  <g fill="#3a4d31"><circle cx="180" cy="200" r="8"/><circle cx="330" cy="150" r="8"/><circle cx="500" cy="160" r="8"/><circle cx="620" cy="220" r="8"/></g>
+</svg>

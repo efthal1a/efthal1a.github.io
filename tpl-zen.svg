@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <rect width="800" height="520" fill="#efe9dc"/>
+  <rect y="150" width="800" height="370" fill="#e6ded0"/>
+  <!-- raked gravel lines -->
+  <g fill="none" stroke="#cfc4ac" stroke-width="3">
+    <path d="M0 210 H800"/><path d="M0 250 H800"/><path d="M0 290 H800"/><path d="M0 330 H800"/><path d="M0 370 H800"/><path d="M0 410 H800"/><path d="M0 450 H800"/><path d="M0 490 H800"/>
+  </g>
+  <!-- rock groupings with raked ripples -->
+  <g>
+    <ellipse cx="250" cy="300" rx="70" ry="46" fill="none" stroke="#cfc4ac" stroke-width="3"/>
+    <ellipse cx="250" cy="300" rx="46" ry="30" fill="none" stroke="#cfc4ac" stroke-width="3"/>
+    <path d="M220 300 q30 -40 60 0 q-30 30 -60 0 Z" fill="#6b6552"/>
+    <path d="M262 300 q18 -22 34 0 q-18 16 -34 0 Z" fill="#4d493a"/>
+  </g>
+  <g>
+    <ellipse cx="560" cy="380" rx="60" ry="40" fill="none" stroke="#cfc4ac" stroke-width="3"/>
+    <path d="M540 380 q22 -30 44 0 q-22 22 -44 0 Z" fill="#5a5442"/>
+  </g>
+  <!-- single moss / maple accent -->
+  <circle cx="120" cy="200" r="20" fill="#6b8759" opacity="0.8"/>
+  <path d="M700 160 q10 40 -6 70" stroke="#8a6a4a" stroke-width="6" fill="none"/>
+  <circle cx="694" cy="150" r="24" fill="#a5502f" opacity="0.55"/>
+</svg>

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "tpl-minoan",
+    "era_el": "Μινωική Κρήτη · ~1700 π.Χ.",
+    "era_en": "Minoan Crete · ~1700 BC",
+    "title_el": "Ο Μινωικός Κήπος",
+    "title_en": "The Minoan Garden",
+    "story_el": "Εμπνευσμένος από τις τοιχογραφίες της Κνωσού, με κρίνα, κρόκους και ίριδες. Ο αρχαιότερος κηποτεχνικός πολιτισμός της Ευρώπης, στον ίδιο σου τον τόπο.",
+    "story_en": "Inspired by the frescoes of Knossos, with lilies, crocuses and irises — Europe's oldest garden-making culture, in your own homeland.",
+    "files": [],
+    "img": "assets/img/templates/tpl-minoan.svg"
+  },
+  {
+    "id": "tpl-water",
+    "era_el": "Μαυριτανική Ισπανία · 14ος αι.",
+    "era_en": "Moorish Spain · 14th c.",
+    "title_el": "Ο Κήπος του Νερού",
+    "title_en": "The Garden of Water",
+    "story_el": "Βασισμένος στο Generalife της Αλάμπρα. Η τέχνη του νερού σε ξηρό κλίμα — ένα μάθημα ιδανικό για την Κρήτη.",
+    "story_en": "Based on the Generalife of the Alhambra. The art of water in a dry climate — a lesson ideal for Crete.",
+    "files": [],
+    "img": "assets/img/templates/tpl-water.svg"
+  },
+  {
+    "id": "tpl-renaissance",
+    "era_el": "Ιταλική Αναγέννηση · 16ος αι.",
+    "era_en": "Italian Renaissance · 16th c.",
+    "title_el": "Η Αναγεννησιακή Βεράντα",
+    "title_en": "The Renaissance Terrace",
+    "story_el": "Έμπνευση από τη Villa d'Este στο Tivoli. Γεωμετρία, άξονες και προοπτική — η καθαρή τάξη της αρχιτέκτονα.",
+    "story_en": "Inspired by Villa d'Este in Tivoli. Geometry, axes and perspective — the architect's pure order.",
+    "files": [],
+    "img": "assets/img/templates/tpl-renaissance.svg"
+  },
+  {
+    "id": "tpl-monastic",
+    "era_el": "Μεσαίωνας · κρητικές μονές",
+    "era_en": "Middle Ages · Cretan monasteries",
+    "title_el": "Ο Μοναστηριακός Κήπος",
+    "title_en": "The Monastic Garden",
+    "story_el": "Αρωματικά και φαρμακευτικά φυτά σε αυστηρή τετράγωνη διάταξη, όπως στους μεσαιωνικούς βοτανικούς κήπους και τις μονές της Κρήτης.",
+    "story_en": "Aromatic and medicinal plants in strict square beds, as in medieval botanical gardens and Cretan monasteries.",
+    "files": [],
+    "img": "assets/img/templates/tpl-monastic.svg"
+  },
+  {
+    "id": "tpl-zen",
+    "era_el": "Ιαπωνία · Κιότο, 15ος αι.",
+    "era_en": "Japan · Kyoto, 15th c.",
+    "title_el": "Ο Κήπος της Σιωπής",
+    "title_en": "The Garden of Silence",
+    "story_el": "Ζεν μινιμαλισμός εμπνευσμένος από το Ryōan-ji: χαλίκι, πέτρα, ελάχιστο νερό και μέγιστη ηρεμία.",
+    "story_en": "Zen minimalism inspired by Ryōan-ji: gravel, stone, minimal water and maximum calm.",
+    "files": [],
+    "img": "assets/img/templates/tpl-zen.svg"
+  },
+  {
+    "id": "tpl-english",
+    "era_el": "Αγγλία · 19ος–20ός αι.",
+    "era_en": "England · 19th–20th c.",
+    "title_el": "Το Αγγλικό Περιβόλι",
+    "title_en": "The English Cottage Garden",
+    "story_el": "Ελεγχόμενη «αταξία» εμπνευσμένη από το Sissinghurst: πολυετή φυτά και «δωμάτια» κήπου.",
+    "story_en": "Controlled 'wildness' inspired by Sissinghurst: perennials and garden 'rooms'.",
+    "files": [],
+    "img": "assets/img/templates/tpl-english.svg"
+  },
+  {
+    "id": "tpl-senses",
+    "era_el": "Θεραπευτική κηπουρική",
+    "era_en": "Therapeutic horticulture",
+    "title_el": "Ο Κήπος των Αισθήσεων",
+    "title_en": "The Garden of the Senses",
+    "story_el": "Πέντε ζώνες, μία για κάθε αίσθηση. Το σήμα κατατεθέν της συλλογής — άρωμα, υφή, χρώμα, ήχος και γεύση.",
+    "story_en": "Five zones, one for each sense. The signature of the collection — scent, texture, color, sound and taste.",
+    "files": [],
+    "img": "assets/img/templates/tpl-senses.svg"
+  },
+  {
+    "id": "tpl-dryland",
+    "era_el": "Κρήτη · διαχρονικό",
+    "era_en": "Crete · timeless",
+    "title_el": "Η Ξηρική Πλαγιά",
+    "title_en": "The Dryland Slope",
+    "story_el": "Ξηρολιθιά, ενδημικά φυτά και μηδενικό πότισμα. Βιωσιμότητα βγαλμένη από το ίδιο το κρητικό τοπίο.",
+    "story_en": "Dry-stone walls, endemic plants and zero irrigation. Sustainability drawn from the Cretan landscape itself.",
+    "files": [],
+    "img": "assets/img/templates/tpl-dryland.svg"
+  }
+]

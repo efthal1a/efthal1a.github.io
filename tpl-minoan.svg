@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs><linearGradient id="skM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe0c4"/><stop offset="1" stop-color="#e6cfa8"/></linearGradient></defs>
+  <rect width="800" height="520" fill="url(#skM)"/>
+  <!-- sun -->
+  <circle cx="640" cy="120" r="46" fill="#f2c98a" opacity="0.6"/>
+  <!-- distant hills -->
+  <path d="M0 300 Q200 250 400 295 T800 285 V520 H0 Z" fill="#cbb58a"/>
+  <!-- terrace ground -->
+  <rect y="360" width="800" height="160" fill="#d9b98f"/>
+  <rect y="360" width="800" height="160" fill="#a5502f" opacity="0.12"/>
+  <!-- whitewashed wall with minoan columns -->
+  <rect x="60" y="230" width="300" height="150" fill="#f7f4ec"/>
+  <rect x="60" y="230" width="300" height="18" fill="#c26a41"/>
+  <g fill="#c26a41">
+    <rect x="90" y="248" width="34" height="132"/><rect x="176" y="248" width="34" height="132"/><rect x="262" y="248" width="34" height="132"/>
+  </g>
+  <g fill="#a5502f"><rect x="84" y="240" width="46" height="12"/><rect x="170" y="240" width="46" height="12"/><rect x="256" y="240" width="46" height="12"/></g>
+  <!-- olive tree -->
+  <path d="M560 380 V300" stroke="#6b5a3a" stroke-width="12" fill="none"/>
+  <circle cx="560" cy="270" r="52" fill="#8fa87c"/><circle cx="520" cy="290" r="34" fill="#6b8759"/><circle cx="600" cy="292" r="34" fill="#6b8759"/>
+  <!-- lilies (minoan fresco motif) -->
+  <g stroke="#c26a41" stroke-width="4" fill="none">
+    <path d="M420 380 V320 M420 330 q-18 -14 -6 -34 M420 330 q18 -14 6 -34 M420 322 q0 -20 0 -30"/>
+    <path d="M452 380 V335 M452 342 q-14 -10 -5 -26 M452 342 q14 -10 5 -26"/>
+  </g>
+  <!-- geometric beds -->
+  <g stroke="#a5502f" stroke-width="3" fill="none" opacity="0.6"><rect x="120" y="430" width="120" height="50"/><rect x="300" y="430" width="120" height="50"/><rect x="480" y="430" width="120" height="50"/></g>
+</svg>

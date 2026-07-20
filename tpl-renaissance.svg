@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs><linearGradient id="skR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e7e6d4"/><stop offset="1" stop-color="#cfd3b6"/></linearGradient></defs>
+  <rect width="800" height="520" fill="url(#skR)"/>
+  <!-- lawn -->
+  <rect y="260" width="800" height="260" fill="#8fa87c"/>
+  <rect y="260" width="800" height="260" fill="#4d6642" opacity="0.15"/>
+  <!-- symmetric parterre knots (top-down feel) -->
+  <g fill="none" stroke="#3a4d31" stroke-width="4">
+    <rect x="120" y="300" width="200" height="180"/><rect x="480" y="300" width="200" height="180"/>
+    <path d="M120 300 L320 480 M320 300 L120 480"/><path d="M480 300 L680 480 M680 300 L480 480"/>
+    <circle cx="220" cy="390" r="46"/><circle cx="580" cy="390" r="46"/>
+  </g>
+  <g fill="#6b8759"><circle cx="220" cy="390" r="26"/><circle cx="580" cy="390" r="26"/></g>
+  <!-- central axis fountain -->
+  <ellipse cx="400" cy="410" rx="54" ry="26" fill="#a9c6d4"/>
+  <ellipse cx="400" cy="410" rx="54" ry="26" fill="none" stroke="#f7f4ec" stroke-width="4"/>
+  <rect x="394" y="360" width="12" height="50" fill="#cfd3b6"/>
+  <circle cx="400" cy="356" r="12" fill="#a9c6d4"/>
+  <!-- topiary cones -->
+  <g fill="#4d6642"><path d="M400 300 l24 -80 l24 80 Z" transform="translate(-48,0)"/><path d="M400 300 l24 -80 l24 80 Z" transform="translate(0,0)"/></g>
+  <g fill="#3a4d31"><path d="M60 300 l20 -70 l20 70 Z"/><path d="M700 300 l20 -70 l20 70 Z"/></g>
+</svg>

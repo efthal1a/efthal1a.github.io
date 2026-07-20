@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380">
+  <rect width="600" height="380" fill="#2c3a26"/>
+  <!-- strict axes with nature overflowing -->
+  <g stroke="#b5c98a" stroke-width="2" opacity="0.5">
+    <line x1="300" y1="20" x2="300" y2="360"/><line x1="40" y1="190" x2="560" y2="190"/>
+    <rect x="120" y="90" width="360" height="200" fill="none"/>
+  </g>
+  <!-- overflowing foliage within boundary -->
+  <g fill="#6b8759" opacity="0.9"><circle cx="200" cy="200" r="50"/><circle cx="400" cy="180" r="46"/><circle cx="300" cy="230" r="40"/></g>
+  <g fill="#8fa87c" opacity="0.85"><circle cx="240" cy="170" r="30"/><circle cx="360" cy="220" r="34"/><circle cx="150" cy="230" r="26"/><circle cx="450" cy="220" r="24"/></g>
+  <g fill="#a7c957"><circle cx="300" cy="190" r="14"/><circle cx="220" cy="215" r="8"/><circle cx="410" cy="200" r="8"/></g>
+  <!-- a few blossoms spilling past the line -->
+  <g fill="#c98aa6"><circle cx="130" cy="150" r="7"/><circle cx="470" cy="150" r="7"/><circle cx="300" cy="70" r="7"/></g>
+  <!-- caption dots -->
+  <circle cx="300" cy="190" r="5" fill="#f7f4ec"/>
+</svg>

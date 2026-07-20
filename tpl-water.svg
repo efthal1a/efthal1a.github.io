@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs><linearGradient id="skW" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dce8e6"/><stop offset="1" stop-color="#bcd2cf"/></linearGradient>
+  <linearGradient id="wat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6ba3b8"/><stop offset="1" stop-color="#2a6f8f"/></linearGradient></defs>
+  <rect width="800" height="520" fill="url(#skW)"/>
+  <rect y="330" width="800" height="190" fill="#d7c9a6"/>
+  <!-- moorish arched wall -->
+  <g fill="#e9dcc0"><rect x="250" y="120" width="300" height="120"/></g>
+  <g fill="#bcd2cf"><path d="M280 240 v-60 a30 30 0 0 1 60 0 v60 Z"/><path d="M370 240 v-60 a30 30 0 0 1 60 0 v60 Z"/><path d="M460 240 v-60 a30 30 0 0 1 60 0 v60 Z"/></g>
+  <!-- long reflecting pool (perspective) -->
+  <polygon points="330,330 470,330 560,510 240,510" fill="url(#wat)"/>
+  <g stroke="#cfe6ee" stroke-width="3" opacity="0.6"><line x1="345" y1="360" x2="455" y2="360"/><line x1="330" y1="410" x2="470" y2="410"/><line x1="300" y1="470" x2="500" y2="470"/></g>
+  <!-- water jets -->
+  <g stroke="#f7f4ec" stroke-width="3" opacity="0.8" fill="none"><path d="M400 330 q-10 -30 0 -50 q10 20 0 50"/></g>
+  <!-- cypress rows -->
+  <g fill="#3a4d31"><path d="M150 340 q14 -120 28 0 Z"/><path d="M90 350 q12 -100 24 0 Z"/></g>
+  <g fill="#3a4d31"><path d="M650 340 q14 -120 28 0 Z"/><path d="M710 350 q12 -100 24 0 Z"/></g>
+</svg>

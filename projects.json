@@ -1,0 +1,35 @@
+[
+  {
+    "id": "p-knossos-courtyard",
+    "cat": "gardens",
+    "title_el": "Αυλή εμπνευσμένη από την Κνωσό",
+    "title_en": "Knossos-inspired Courtyard",
+    "desc_el": "Μεσογειακή αυλή με ελιές, ασβεστωμένους τοίχους και γεωμετρικά παρτέρια.",
+    "desc_en": "Mediterranean courtyard with olive trees, whitewashed walls and geometric beds.",
+    "img": "assets/img/templates/tpl-minoan.svg",
+    "images": ["assets/img/templates/tpl-minoan.svg", "assets/img/notes/olive.svg"],
+    "wide": true
+  },
+  {
+    "id": "p-drought-slope",
+    "cat": "gardens",
+    "title_el": "Ξηρική πλαγιά",
+    "title_en": "Drought-tolerant Slope",
+    "desc_el": "Ξηρολιθιά και ενδημικά φυτά της Κρήτης, μηδενικό πότισμα.",
+    "desc_en": "Dry-stone walls and endemic Cretan plants, zero irrigation.",
+    "img": "assets/img/templates/tpl-dryland.svg",
+    "images": ["assets/img/templates/tpl-dryland.svg", "assets/img/notes/dryland.svg", "assets/img/notes/thyme.svg"],
+    "wide": false
+  },
+  {
+    "id": "p-gis-analysis",
+    "cat": "gis",
+    "title_el": "Χαρτογράφηση φύτευσης με GIS",
+    "title_en": "Planting Analysis with GIS",
+    "desc_el": "Ανάλυση εδάφους και έκθεσης για τη βέλτιστη χωροθέτηση φυτών.",
+    "desc_en": "Soil and exposure analysis for optimal plant placement.",
+    "img": "assets/img/templates/tpl-senses.svg",
+    "images": ["assets/img/templates/tpl-senses.svg"],
+    "wide": false
+  }
+]

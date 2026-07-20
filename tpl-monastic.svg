@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs><linearGradient id="skMo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6ddca"/><stop offset="1" stop-color="#d2c8ad"/></linearGradient></defs>
+  <rect width="800" height="520" fill="url(#skMo)"/>
+  <rect y="120" width="800" height="400" fill="#c9bd9c"/>
+  <!-- cloister square, four beds with cross paths -->
+  <g transform="translate(240,150)">
+    <rect x="0" y="0" width="320" height="320" fill="#b7a983"/>
+    <rect x="146" y="0" width="28" height="320" fill="#e6ddca"/>
+    <rect x="0" y="146" width="320" height="28" fill="#e6ddca"/>
+    <!-- four planted quadrants -->
+    <g fill="#6b8759">
+      <rect x="14" y="14" width="118" height="118"/><rect x="188" y="14" width="118" height="118"/>
+      <rect x="14" y="188" width="118" height="118"/><rect x="188" y="188" width="118" height="118"/>
+    </g>
+    <g fill="#8fa87c" opacity="0.8">
+      <rect x="14" y="14" width="118" height="118"/><rect x="188" y="188" width="118" height="118"/>
+    </g>
+    <!-- rows of herbs -->
+    <g stroke="#3a4d31" stroke-width="3">
+      <line x1="30" y1="30" x2="30" y2="116"/><line x1="60" y1="30" x2="60" y2="116"/><line x1="90" y1="30" x2="90" y2="116"/><line x1="116" y1="30" x2="116" y2="116"/>
+      <line x1="204" y1="204" x2="204" y2="290"/><line x1="234" y1="204" x2="234" y2="290"/><line x1="264" y1="204" x2="264" y2="290"/><line x1="290" y1="204" x2="290" y2="290"/>
+    </g>
+    <!-- central well -->
+    <circle cx="160" cy="160" r="26" fill="#a9a06f"/><circle cx="160" cy="160" r="14" fill="#5a4f34"/>
+  </g>
+</svg>

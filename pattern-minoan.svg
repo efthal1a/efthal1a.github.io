@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <g fill="none" stroke="#f7f4ec" stroke-width="3">
+    <!-- minoan running spiral / wave -->
+    <path d="M0 90 h20 v-40 h50 v50 h-30 v-25 h15"/>
+    <path d="M90 90 h20 v-40 h50 v50 h-30 v-25 h15"/>
+    <path d="M0 180 h20 v-40 h50 v50 h-30 v-25 h15"/>
+    <path d="M90 180 h20 v-40 h50 v50 h-30 v-25 h15"/>
+    <circle cx="45" cy="35" r="6"/>
+    <circle cx="135" cy="35" r="6"/>
+    <circle cx="45" cy="125" r="6"/>
+    <circle cx="135" cy="125" r="6"/>
+  </g>
+</svg>

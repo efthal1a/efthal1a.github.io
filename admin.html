@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Διαχείριση · Efthalia Arnaoutopoulou</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/vendor/crypto-js.min.js"></script>
+</head>
+<body class="page-plain">
+
+  <div class="panel-shell">
+
+    <!-- LOGIN -->
+    <div id="loginView">
+      <div class="panel login-box">
+        <span class="badge-lock">🔒 Ιδιωτικός χώρος</span>
+        <h2>Καλωσήρθες, Λία</h2>
+
+        <!-- normal one-password login -->
+        <div id="pwLogin">
+          <p class="muted">Βάλε τον κωδικό σου για να μπεις.</p>
+          <div class="field" style="margin-bottom:1.1rem"><label>Κωδικός</label><input id="inPass" type="password" placeholder="ο κωδικός σου" autocomplete="current-password" /></div>
+          <button class="btn btn--dark" id="loginBtn" style="width:100%;justify-content:center">Σύνδεση</button>
+          <p class="muted" style="margin-top:1.2rem;font-size:.82rem">Πρώτη φορά εδώ; <a href="#" id="showSetup" style="color:var(--crete-blue)">Ρύθμισε τη σύνδεση (μία φορά)</a></p>
+        </div>
+
+        <!-- one-time setup -->
+        <div id="setupBox" class="hidden">
+          <p class="muted">Μία φορά μόνο: σύνδεσε τον λογαριασμό GitHub και όρισε τον κωδικό σου. Μετά θα μπαίνεις παντού μόνο με τον κωδικό.</p>
+          <div class="field" style="margin-bottom:.8rem"><label>GitHub χρήστης (owner)</label><input id="inOwner" placeholder="π.χ. efthalia" /></div>
+          <div class="field" style="margin-bottom:.8rem"><label>Repository</label><input id="inRepo" placeholder="π.χ. efthalia-garden" /></div>
+          <div class="field" style="margin-bottom:.8rem"><label>Branch</label><input id="inBranch" placeholder="main" value="main" /></div>
+          <div class="field" style="margin-bottom:.8rem"><label>Προσωπικό κλειδί GitHub (μία φορά)</label><input id="inToken" type="password" placeholder="github_pat_…" /></div>
+          <div class="field" style="margin-bottom:1.1rem"><label>Όρισε κωδικό σύνδεσης</label><input id="inSetupPass" type="password" placeholder="π.χ. ZervLia!" /></div>
+          <button class="btn btn--dark" id="setupBtn" style="width:100%;justify-content:center">Ρύθμιση & αποθήκευση</button>
+          <p class="muted" style="margin-top:1.1rem;font-size:.8rem">Το κλειδί αποθηκεύεται <b>κρυπτογραφημένο (AES)</b> με τον κωδικό σου — κανείς δεν το βλέπει χωρίς αυτόν. Οδηγίες για το κλειδί στο README.</p>
+          <p style="margin-top:.7rem"><a href="#" id="hideSetup" style="color:var(--crete-blue);font-size:.85rem">← Πίσω στη σύνδεση</a></p>
+        </div>
+
+        <p style="margin-top:1.4rem;border-top:1px solid var(--line);padding-top:1rem"><a href="index.html" style="color:var(--crete-blue);font-size:.85rem">← Επιστροφή στη σελίδα</a></p>
+      </div>
+    </div>
+
+    <!-- APP -->
+    <div id="appView" class="hidden">
+      <div class="panel">
+        <div class="row" style="justify-content:space-between">
+          <div>
+            <span class="badge-lock">🌿 Πίνακας διαχείρισης</span>
+            <h2 style="margin:0">Το ατελιέ σου</h2>
+            <p class="muted" style="margin:.3rem 0 0">Συνδεδεμένη με <b id="whoLabel"></b></p>
+          </div>
+          <button class="btn btn--ghost" id="logoutBtn" style="border-color:var(--line);color:var(--ink)">Αποσύνδεση</button>
+        </div>
+
+        <div class="tabs" style="margin-top:1.6rem">
+          <button class="active" data-tab="ideas">Ιδέες</button>
+          <button data-tab="work">Έργα</button>
+          <button data-tab="tpl">Templates</button>
+        </div>
+
+        <!-- IDEAS -->
+        <div data-panel="ideas">
+          <h3>Νέα ιδέα / σημείωση</h3>
+          <form id="postForm" style="display:grid;gap:.9rem">
+            <div class="row">
+              <div class="field" style="flex:1"><label>Ημερομηνία</label><input id="postDate" type="date" /></div>
+              <div class="field" style="flex:1"><label>Ετικέτα (EL)</label><input id="postTagEl" placeholder="π.χ. Φυτά της Κρήτης" /></div>
+              <div class="field" style="flex:1"><label>Ετικέτα (EN)</label><input id="postTagEn" placeholder="optional" /></div>
+            </div>
+            <div class="row">
+              <div class="field" style="flex:1"><label>Τίτλος (EL)</label><input id="postTitleEl" /></div>
+              <div class="field" style="flex:1"><label>Τίτλος (EN)</label><input id="postTitleEn" placeholder="optional" /></div>
+            </div>
+            <div class="row">
+              <div class="field" style="flex:1"><label>Κείμενο (EL)</label><textarea id="postBodyEl"></textarea></div>
+              <div class="field" style="flex:1"><label>Κείμενο (EN)</label><textarea id="postBodyEn" placeholder="optional"></textarea></div>
+            </div>
+            <div class="field"><label>Φωτογραφίες (μπορείς να διαλέξεις πολλές)</label><input id="postImg" type="file" accept="image/*" multiple /></div>
+            <div class="field"><label>ή σύνδεσμος φωτογραφίας από το ίντερνετ (προαιρετικό)</label><input id="postImgUrl" type="url" placeholder="https://…" /></div>
+            <div><button class="btn btn--dark" id="postBtn" type="submit">Δημοσίευση ιδέας</button></div>
+          </form>
+          <h3>Δημοσιευμένες</h3>
+          <div id="postList"></div>
+        </div>
+
+        <!-- WORK -->
+        <div data-panel="work" class="hidden">
+          <h3>Νέο έργο</h3>
+          <form id="projForm" style="display:grid;gap:.9rem">
+            <div class="row">
+              <div class="field" style="flex:1"><label>Κατηγορία</label>
+                <select id="projCat"><option value="gardens">Κήποι</option><option value="studies">Μελέτες</option><option value="gis">GIS</option></select>
+              </div>
+              <div class="field" style="flex:2"><label>Τίτλος (EL)</label><input id="projTitleEl" /></div>
+              <div class="field" style="flex:2"><label>Τίτλος (EN)</label><input id="projTitleEn" placeholder="optional" /></div>
+            </div>
+            <div class="row">
+              <div class="field" style="flex:1"><label>Περιγραφή (EL)</label><textarea id="projDescEl"></textarea></div>
+              <div class="field" style="flex:1"><label>Περιγραφή (EN)</label><textarea id="projDescEn" placeholder="optional"></textarea></div>
+            </div>
+            <div class="field"><label>Φωτογραφίες / renders (μπορείς να διαλέξεις πολλές)</label><input id="projImg" type="file" accept="image/*" multiple /></div>
+            <div class="row">
+              <div class="field" style="flex:2"><label>ή σύνδεσμος φωτογραφίας από το ίντερνετ (προαιρετικό)</label><input id="projImgUrl" type="url" placeholder="https://…" /></div>
+              <label style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--ink-soft)"><input id="projWide" type="checkbox" style="width:auto" /> Μεγάλο πλάτος</label>
+            </div>
+            <div><button class="btn btn--dark" id="projBtn" type="submit">Προσθήκη έργου</button></div>
+          </form>
+          <h3>Έργα</h3>
+          <div id="projList"></div>
+        </div>
+
+        <!-- TEMPLATES -->
+        <div data-panel="tpl" class="hidden">
+          <h3>Έμπνευση & ιστορία (δημόσια)</h3>
+          <p class="muted">Η εικόνα έμπνευσης και η ιστορία φαίνονται σε όλους. Άφησε κενά όσα δεν θέλεις να αλλάξεις.</p>
+          <form id="tplMetaForm" style="display:grid;gap:.9rem">
+            <div class="row">
+              <div class="field" style="flex:1"><label>Template</label><select id="tplMetaSelect"></select></div>
+              <div class="field" style="flex:1"><label>Νέα εικόνα έμπνευσης</label><input id="tplMetaImg" type="file" accept="image/*" /></div>
+            </div>
+            <div class="row">
+              <div class="field" style="flex:1"><label>Ιστορία (EL)</label><textarea id="tplStoryEl" placeholder="άφησε κενό για να μείνει ίδια"></textarea></div>
+              <div class="field" style="flex:1"><label>Ιστορία (EN)</label><textarea id="tplStoryEn" placeholder="optional"></textarea></div>
+            </div>
+            <div><button class="btn btn--dark" id="tplMetaBtn" type="submit">Αποθήκευση</button></div>
+          </form>
+
+          <h3>Ανέβασμα ιδιωτικού αρχείου (κρυπτογραφημένο)</h3>
+          <p class="muted">Το αρχείο κρυπτογραφείται με τον κωδικό σου <b>πριν</b> ανέβει. Χωρίς τον κωδικό κανείς δεν μπορεί να το ανοίξει — ούτε αν κατεβάσει το repo.</p>
+          <form id="tplFileForm" style="display:grid;gap:.9rem">
+            <div class="row">
+              <div class="field" style="flex:1"><label>Template</label><select id="tplSelect"></select></div>
+              <div class="field" style="flex:1"><label>Αρχείο (Realtime Landscaping, PDF, κ.λπ.)</label><input id="tplFile" type="file" /></div>
+            </div>
+            <div class="field"><label>Κωδικός κρυπτογράφησης</label><input id="tplPass" type="password" placeholder="ο μυστικός σου κωδικός" /></div>
+            <div><button class="btn btn--dark" id="tplBtn" type="submit">Κρυπτογράφηση & ανέβασμα</button></div>
+          </form>
+          <h3>Αρχεία ανά template</h3>
+          <div id="tplList"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/github.js"></script>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

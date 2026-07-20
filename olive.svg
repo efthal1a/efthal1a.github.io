@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380">
+  <defs><linearGradient id="bgO" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0ece0"/><stop offset="1" stop-color="#e4ddca"/></linearGradient></defs>
+  <rect width="600" height="380" fill="url(#bgO)"/>
+  <!-- olive branch arc -->
+  <path d="M40 120 C200 90 400 130 560 110" stroke="#8a6a4a" stroke-width="7" fill="none"/>
+  <!-- leaves -->
+  <g fill="#6b8759">
+    <ellipse cx="120" cy="105" rx="30" ry="10" transform="rotate(-25 120 105)"/>
+    <ellipse cx="200" cy="120" rx="30" ry="10" transform="rotate(15 200 120)"/>
+    <ellipse cx="290" cy="112" rx="30" ry="10" transform="rotate(-18 290 112)"/>
+    <ellipse cx="380" cy="126" rx="30" ry="10" transform="rotate(20 380 126)"/>
+    <ellipse cx="470" cy="112" rx="30" ry="10" transform="rotate(-15 470 112)"/>
+  </g>
+  <g fill="#8fa87c">
+    <ellipse cx="160" cy="150" rx="28" ry="9" transform="rotate(30 160 150)"/>
+    <ellipse cx="330" cy="152" rx="28" ry="9" transform="rotate(28 330 152)"/>
+    <ellipse cx="430" cy="150" rx="28" ry="9" transform="rotate(32 430 150)"/>
+  </g>
+  <!-- olives -->
+  <g fill="#4d6642"><ellipse cx="150" cy="145" rx="9" ry="13"/><ellipse cx="300" cy="150" rx="9" ry="13"/><ellipse cx="410" cy="148" rx="9" ry="13"/></g>
+  <g fill="#8f6a9a" opacity="0.5"><ellipse cx="230" cy="158" rx="9" ry="13"/><ellipse cx="470" cy="150" rx="9" ry="13"/></g>
+  <!-- soft ground shrubs -->
+  <g fill="#9bb583" opacity="0.8"><ellipse cx="130" cy="330" rx="70" ry="30"/><ellipse cx="420" cy="340" rx="90" ry="34"/></g>
+</svg>

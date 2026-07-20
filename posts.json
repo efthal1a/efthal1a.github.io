@@ -1,0 +1,46 @@
+[
+  {
+    "id": "post-dittany",
+    "date": "2026-07-15",
+    "tag_el": "Φυτά της Κρήτης",
+    "tag_en": "Cretan Flora",
+    "title_el": "Το δίκταμο: το ενδημικό στολίδι της Κρήτης",
+    "title_en": "Dittany: Crete's endemic jewel",
+    "body_el": "Το δίκταμο (Origanum dictamnus) φυτρώνει μόνο στην Κρήτη, σε βράχια και φαράγγια. Στον κήπο θέλει ξηρό, πετρώδες έδαφος και ήλιο — ιδανικό για βιώσιμες συνθέσεις χαμηλού ποτίσματος, με τα χνουδωτά φύλλα του να λάμπουν ασημί το καλοκαίρι.",
+    "body_en": "Dittany (Origanum dictamnus) grows only in Crete, on cliffs and gorges. In the garden it needs dry, rocky soil and full sun — perfect for low-water sustainable designs, its downy leaves shimmering silver through summer.",
+    "img": "assets/img/notes/dittany.svg"
+  },
+  {
+    "id": "post-thyme-july",
+    "date": "2026-07-10",
+    "tag_el": "Φυτό της εποχής",
+    "tag_en": "Plant of the season",
+    "title_el": "Θυμάρι τον Ιούλιο: χρώμα, άρωμα και μέλισσες",
+    "title_en": "Thyme in July: color, scent and bees",
+    "body_el": "Τον Ιούλιο το θυμάρι ανθίζει σε μοβ μαξιλάρια που βουίζουν από μέλισσες. Αντέχει τη ζέστη, δεν θέλει σχεδόν καθόλου νερό και κρατά το χώμα στη θέση του σε επικλινή σημεία. Ένα φυτό-κλειδί για κάθε κρητικό κήπο αισθήσεων.",
+    "body_en": "In July, thyme blooms into purple cushions humming with bees. It shrugs off the heat, needs almost no water and holds soil on slopes. A key plant for any Cretan garden of the senses.",
+    "img": "assets/img/notes/thyme.svg"
+  },
+  {
+    "id": "post-order-senses",
+    "date": "2026-07-05",
+    "tag_el": "Φιλοσοφία σχεδιασμού",
+    "tag_en": "Design Philosophy",
+    "title_el": "Τάξη και αίσθηση: πώς συνυπάρχουν",
+    "title_en": "Order and the senses: how they coexist",
+    "body_el": "Ένας κήπος μπορεί να ξυπνά όλες τις αισθήσεις και ταυτόχρονα να έχει καθαρή αρχιτεκτονική δομή. Το μυστικό είναι οι άξονες: αφήνουμε τη φύση να ξεχειλίσει μέσα σε αυστηρά όρια, ώστε η αφθονία να μοιάζει επιλογή κι όχι τυχαιότητα.",
+    "body_en": "A garden can awaken every sense and still hold a clear architectural structure. The secret is axes: we let nature overflow within strict boundaries, so abundance reads as a choice, not chance.",
+    "img": "assets/img/notes/order-senses.svg"
+  },
+  {
+    "id": "post-dryland",
+    "date": "2026-06-28",
+    "tag_el": "Βιωσιμότητα",
+    "tag_en": "Sustainability",
+    "title_el": "Ξηρικός κήπος: ομορφιά χωρίς πότισμα",
+    "title_en": "The dry garden: beauty without irrigation",
+    "body_el": "Λεβάντα, φασκόμηλο, αγαύη και αγριόχορτα σε στρώμα χαλικιού μπορούν να φτιάξουν έναν κήπο που ανθεί όλο το καλοκαίρι χωρίς σχεδόν καθόλου νερό. Το κλειδί είναι το καλό στράγγισμα και η επιλογή φυτών που ήδη αγαπούν το κρητικό κλίμα.",
+    "body_en": "Lavender, sage, agave and wild grasses on a bed of gravel can make a garden that blooms all summer with almost no water. The key is good drainage and choosing plants that already love the Cretan climate.",
+    "img": "assets/img/notes/dryland.svg"
+  }
+]
