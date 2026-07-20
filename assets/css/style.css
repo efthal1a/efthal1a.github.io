@@ -197,7 +197,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.1; 
 
 /* marquee strip */
 .hero-marquee { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; overflow: hidden; border-top: 1px solid rgba(247,244,236,0.12); background: rgba(20,26,18,0.35); backdrop-filter: blur(6px); padding: 0.7rem 0; }
-.marq { display: inline-flex; white-space: nowrap; animation: marqmove 26s linear infinite; }
+.marq { display: inline-flex; white-space: nowrap; animation: marqmove 60s linear infinite; }
 .marq span { font-size: 0.74rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(247,244,236,0.55); padding-right: 1rem; }
 @keyframes marqmove { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
