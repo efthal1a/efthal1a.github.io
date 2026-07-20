@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Efthalia Arnaoutopoulou · Ο κήπος των αισθήσεων</title>
+  <meta name="description" content="Εφθαλία Αρναουτοπούλου — Γεωπόνος με κλίση στην αρχιτεκτονική τοπίου και GIS. Σχεδιασμός κήπων εμπνευσμένος από ιστορικά τοπία. Κρήτη." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta property="og:title" content="Ο κήπος των αισθήσεων — Efthalia Arnaoutopoulou" />
+  <meta property="og:description" content="Αρχιτεκτονική τοπίου με ρίζες στην Κρήτη." />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 54 C32 36 22 24 32 8 C42 24 32 36 32 54 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M32 46 L24 36 M32 38 L40 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+      <div><b>Efthalia A.</b><span>Landscape · Crete</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="#about" data-i18n="nav.about">Προφίλ</a>
+      <a href="#work" data-i18n="nav.work">Έργα</a>
+      <a href="#ideas" data-i18n="nav.ideas">Ιδέες</a>
+      <a href="#templates" data-i18n="nav.templates">Templates</a>
+      <a href="#contact" data-i18n="nav.contact">Επικοινωνία</a>
+      <div class="lang-toggle">
+        <button data-lang="el">EL</button><span>/</span><button data-lang="en">EN</button>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-scene"><canvas id="heroCanvas"></canvas></div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner wrap">
+      <div class="hero-2col">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow" data-i18n="hero.eyebrow">Γεωπόνος · Αρχιτεκτονική Τοπίου · GIS</p>
+          <h1><span data-i18n="hero.title1">Ο κήπος</span><br /><em data-i18n="hero.title2">των αισθήσεων</em></h1>
+          <p class="hero-rotor">
+            <span data-i18n="hero.designs">Σχεδιάζω</span>
+            <span class="rotor" id="rotor"><span class="rotor-word"></span></span>
+            <span data-i18n="hero.that">που ξυπνούν τις αισθήσεις.</span>
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn--primary" href="#work" data-i18n="hero.cta1">Δες τα έργα</a>
+            <a class="btn btn--ghost" href="#contact" data-i18n="hero.cta2">Ας μιλήσουμε</a>
+          </div>
+          <div class="hero-chips">
+            <span data-i18n="hero.chip1">Κήποι αισθήσεων</span>
+            <span data-i18n="hero.chip2">Βιώσιμη φύτευση</span>
+            <span data-i18n="hero.chip3">Αρχιτεκτονική τοπίου</span>
+            <span data-i18n="hero.chip4">GIS & χαρτογράφηση</span>
+          </div>
+        </div>
+        <div class="hero-showcase">
+          <div class="show-back"></div>
+          <div class="show-card">
+            <div class="show-imgs" id="showImgs"></div>
+            <div class="show-meta">
+              <span class="show-tag"><i></i><span id="showLabel"></span></span>
+              <div class="show-dots" id="showDots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-marquee"><div class="marq" id="marq"></div></div>
+    <div class="scroll-hint"><span data-i18n="scroll">Κύλισε</span><i></i></div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap profile">
+      <div class="profile-portrait reveal">
+        <div class="frame"><div class="initials">EA</div></div>
+        <div class="tag" data-i18n="about.tag">Γεωπόνος · Κρήτη</div>
+      </div>
+      <div class="profile-body reveal">
+        <p class="eyebrow" data-i18n="about.eyebrow">Ποια είμαι</p>
+        <h2 data-i18n="about.title">Εφθαλία Αρναουτοπούλου</h2>
+        <p data-i18n="about.p1">Γεωπόνος με ισχυρό υπόβαθρο στην επιστήμη τροφίμων, τη χημεία και την περιβαλλοντική βιωσιμότητα.</p>
+        <p data-i18n="about.p2">Σήμερα εργάζομαι σε εταιρεία πράσινου σχεδιασμού και περιβαλλοντικών υπηρεσιών.</p>
+        <div class="profile-facts">
+          <div class="fact"><strong data-i18n="about.f1n">MSc</strong><span data-i18n="about.f1l">Βιώσιμη Γεωργία & Επιχειρείν (IHU)</span></div>
+          <div class="fact"><strong data-i18n="about.f2n">5 έτη</strong><span data-i18n="about.f2l">Integrated Master, ΑΠΘ</span></div>
+          <div class="fact"><strong data-i18n="about.f3n">C2</strong><span data-i18n="about.f3l">Αγγλικά (Cambridge)</span></div>
+          <div class="fact"><strong data-i18n="about.f4n">GIS</strong><span data-i18n="about.f4l">Χαρτογράφηση & ανάλυση τοπίου</span></div>
+        </div>
+        <ul class="timeline">
+          <li><time>2025 —</time><div><h4 data-i18n="about.tl1t">Γεωπόνος — Fasoulakis</h4><p data-i18n="about.tl1d">Πράσινος σχεδιασμός, μελέτες, επίβλεψη έργων τοπίου.</p></div></li>
+          <li><time>2024</time><div><h4 data-i18n="about.tl2t">CIHEAM Χανίων</h4><p data-i18n="about.tl2d">Ποιοτική ανάλυση μελιού & μικροσκοπική ανάλυση γύρης.</p></div></li>
+          <li><time>2022</time><div><h4 data-i18n="about.tl3t">Proactive A.E.</h4><p data-i18n="about.tl3d">Εντομολογική ανάλυση για τον έλεγχο του δάκου.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section section--tint" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="work.eyebrow">Portfolio</p>
+        <h2 data-i18n="work.title">Επιλεγμένα έργα</h2>
+        <p data-i18n="work.sub">Renders και υλοποιήσεις — κήποι, μελέτες και χαρτογραφήσεις GIS.</p>
+      </div>
+      <div class="filters reveal">
+        <button class="active" data-filter="all" data-i18n="work.f.all">Όλα</button>
+        <button data-filter="gardens" data-i18n="work.f.gardens">Κήποι</button>
+        <button data-filter="studies" data-i18n="work.f.studies">Μελέτες</button>
+        <button data-filter="gis" data-i18n="work.f.gis">GIS</button>
+      </div>
+      <div class="grid-projects" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <!-- IDEAS -->
+  <section class="section" id="ideas">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="ideas.eyebrow">Σημειώσεις</p>
+        <h2 data-i18n="ideas.title">Ιδέες & φυτά της εποχής</h2>
+        <p data-i18n="ideas.sub">Σκέψεις για τον σχεδιασμό, τα φυτά και τη βιωσιμότητα.</p>
+      </div>
+      <div class="grid-posts" id="postGrid"></div>
+    </div>
+  </section>
+
+  <!-- TEMPLATES teaser -->
+  <section class="section section--tint" id="templates">
+    <div class="wrap">
+      <div class="templates-teaser reveal">
+        <span class="lock">🔒 <span data-i18n="tpl.lock">Ιδιωτική βιβλιοθήκη</span></span>
+        <h2 data-i18n="tpl.title">Templates κήπων με ιστορία</h2>
+        <p data-i18n="tpl.sub" style="margin-bottom:2rem">Έτοιμα σχέδια εμπνευσμένα από ιστορικούς κήπους του κόσμου — το καθένα με τη δική του ιστορία. Δες την έμπνευση και το ύφος του καθενός· τα αρχεία σχεδίων ξεκλειδώνουν μόνο εγώ.</p>
+        <div class="tpl-preview" id="tplPreview"></div>
+        <a class="btn btn--primary" href="templates.html" data-i18n="tpl.cta">Είσοδος στη βιβλιοθήκη</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap contact">
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Επικοινωνία</p>
+        <h2 style="font-size:clamp(2rem,4.5vw,3.2rem);margin:.4rem 0 1rem" data-i18n="contact.title">Ας σχεδιάσουμε τον κήπο σας</h2>
+        <p class="serif-lead" data-i18n="contact.sub">Πείτε μου λίγα λόγια για τον χώρο και το όραμά σας.</p>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="row" style="gap:1.1rem">
+          <div class="field" style="flex:1"><label data-i18n="contact.name">Όνομα</label><input name="name" required /></div>
+          <div class="field" style="flex:1"><label data-i18n="contact.email">Email</label><input type="email" name="email" required /></div>
+        </div>
+        <div class="field"><label data-i18n="contact.subject">Θέμα</label><input name="subject" /></div>
+        <div class="field"><label data-i18n="contact.msg">Μήνυμα</label><textarea name="message" required></textarea></div>
+        <div class="form-status" id="formStatus"></div>
+        <div class="row" style="justify-content:space-between">
+          <button class="btn btn--dark" id="formBtn" type="submit" data-i18n="contact.send">Αποστολή μηνύματος</button>
+          <span class="form-note" data-i18n="contact.note">Το μήνυμά σας στέλνεται απευθείας στο email μου.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <a class="brand" href="#top">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 54 C32 36 22 24 32 8 C42 24 32 36 32 54 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <div><b>Efthalia Arnaoutopoulou</b><span data-i18n="footer.tag">Αρχιτεκτονική τοπίου με ρίζες στην Κρήτη.</span></div>
+        </a>
+        <nav class="footer-nav">
+          <a href="#about" data-i18n="nav.about">Προφίλ</a>
+          <a href="#work" data-i18n="nav.work">Έργα</a>
+          <a href="#ideas" data-i18n="nav.ideas">Ιδέες</a>
+          <a href="#contact" data-i18n="nav.contact">Επικοινωνία</a>
+          <a href="admin.html" data-i18n="footer.admin">Διαχείριση</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Efthalia Arnaoutopoulou · <span data-i18n="footer.rights">Με επιφύλαξη κάθε δικαιώματος.</span></span>
+        <span>Crete, Greece</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+    <div class="lb-inner">
+      <div class="lb-stage">
+        <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+        <img id="lbImg" alt="" />
+        <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+        <span class="lb-count" id="lbCount"></span>
+      </div>
+      <div class="lb-info">
+        <span class="cat" id="lbCat"></span>
+        <h3 id="lbTitle"></h3>
+        <p id="lbBody"></p>
+        <div class="lb-thumbs" id="lbThumbs"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
