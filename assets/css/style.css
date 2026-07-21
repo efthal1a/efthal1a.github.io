@@ -198,6 +198,9 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.1; 
 .show-dots button { width: 7px; height: 7px; border-radius: 50%; background: rgba(247,244,236,0.35); transition: background 0.3s, width 0.3s; }
 .show-dots button.active { background: var(--lime-oil); width: 20px; border-radius: 100px; }
 
+/* optional hero backdrop photo — set from the admin panel, empty by default */
+.hero-photo { position: absolute; inset: 0; z-index: 0; background: none center/cover no-repeat; opacity: 0; pointer-events: none; }
+
 /* marquee strip */
 .hero-marquee { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; overflow: hidden; border-top: 1px solid rgba(247,244,236,0.12); background: rgba(20,26,18,0.35); backdrop-filter: blur(6px); padding: 0.7rem 0; }
 .marq { display: inline-flex; white-space: nowrap; animation: marqmove 60s linear infinite; }

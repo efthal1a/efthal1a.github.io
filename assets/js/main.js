@@ -471,6 +471,35 @@
     }
   }
 
+  /* ---------- Site customisation (data/site.json, edited from the admin panel) ----------
+     Theme colours land as :root custom-property overrides; text lands as I18N overrides.
+     Empty values are ignored so a half-filled file never blanks the design. */
+  function applySite(site) {
+    if (!site || typeof site !== "object") return;
+
+    const root = document.documentElement;
+    Object.entries(site.theme || {}).forEach(([prop, val]) => {
+      if (prop.startsWith("--") && val) root.style.setProperty(prop, val);
+    });
+
+    const hero = site.hero || {};
+    if (hero.image) {
+      const layer = $(".hero-photo");
+      if (layer) {
+        layer.style.backgroundImage = `url("${String(hero.image).replace(/"/g, "%22")}")`;
+        layer.style.opacity = hero.opacity || "0.32";
+      }
+    }
+
+    ["el", "en"].forEach((l) => {
+      const over = (site.text || {})[l];
+      if (!over || !window.I18N[l]) return;
+      Object.entries(over).forEach(([k, v]) => {
+        if (typeof v === "string" && v.trim()) window.I18N[l][k] = v;
+      });
+    });
+  }
+
   /* ---------- Photo credits (Wikimedia Commons attribution) ---------- */
   function renderCredits(credits) {
     const host = $("#creditList");
@@ -489,13 +518,15 @@
   async function init() {
     initHero();
     buildShowcase();
-    let CREDITS;
-    [PROJECTS, POSTS, TEMPLATES, CREDITS] = await Promise.all([
+    let CREDITS, SITE;
+    [PROJECTS, POSTS, TEMPLATES, CREDITS, SITE] = await Promise.all([
       loadJSON("projects.json"),
       loadJSON("posts.json"),
       loadJSON("templates.json"),
-      loadJSON("credits.json")
+      loadJSON("credits.json"),
+      loadJSON("site.json")
     ]);
+    applySite(SITE); // before applyLang — it may override the strings applyLang paints
     renderCredits(CREDITS);
     applyLang(lang);
     startHero();

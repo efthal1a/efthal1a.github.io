@@ -1,0 +1,18 @@
+{
+  "theme": {
+    "--olive-900": "",
+    "--olive-800": "",
+    "--lime-oil": "",
+    "--terra-500": "",
+    "--chalk": "",
+    "--ink": ""
+  },
+  "hero": {
+    "image": "",
+    "opacity": "0.32"
+  },
+  "text": {
+    "el": {},
+    "en": {}
+  }
+}
