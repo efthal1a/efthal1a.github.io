@@ -67,9 +67,27 @@
     const el = $("#showLabel");
     if (el) el.textContent = window.I18N[lang][SHOW_ITEMS[showIdx].key] || "";
   }
+  // Words are absolutely positioned, so the container needs an explicit width. Pin it to the
+  // widest word: any width change here shifts where the sentence wraps and the whole line jumps.
+  // The slack sits at the end of a line that already wraps, so it is not visible.
+  function fitRotor(host) {
+    const probe = document.createElement("span");
+    probe.className = "rotor-word";
+    probe.style.visibility = "hidden";
+    host.appendChild(probe);
+    let max = 0;
+    rotorWords.forEach((w) => {
+      probe.textContent = w;
+      max = Math.max(max, probe.getBoundingClientRect().width);
+    });
+    probe.remove();
+    host.style.width = Math.ceil(max) + "px";
+  }
   function setRotorInitial() {
     const host = $("#rotor");
-    if (host) host.innerHTML = `<span class="rotor-word">${escapeHTML(rotorWords[rotorIdx] || "")}</span>`;
+    if (!host) return;
+    host.innerHTML = `<span class="rotor-word">${escapeHTML(rotorWords[rotorIdx] || "")}</span>`;
+    fitRotor(host);
   }
   function rotorTick() {
     const host = $("#rotor");
@@ -79,9 +97,9 @@
     const next = document.createElement("span");
     next.className = "rotor-word in";
     next.textContent = rotorWords[rotorIdx];
-    if (cur) { cur.classList.add("out"); setTimeout(() => cur.remove(), 520); }
+    if (cur) { cur.classList.add("out"); setTimeout(() => cur.remove(), 720); }
     host.appendChild(next);
-    setTimeout(() => next.classList.remove("in"), 580);
+    setTimeout(() => next.classList.remove("in"), 760);
   }
   function buildMarquee() {
     const m = $("#marq");
@@ -95,6 +113,13 @@
     rotorWords = (window.I18N[lang]["hero.rotor"] || "").split("|").filter(Boolean);
     if (rotorIdx >= rotorWords.length) rotorIdx = 0;
     setRotorInitial();
+    // the serif loads async; measuring before it lands gives a fallback-font width
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        const host = $("#rotor");
+        if (host) fitRotor(host);
+      });
+    }
     buildMarquee();
     updateShowLabel();
   }
@@ -103,8 +128,8 @@
     heroStarted = true;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) return;
-    setInterval(rotorTick, 2400);
-    setInterval(() => showGo(showIdx + 1), 4200);
+    setInterval(rotorTick, 3600);
+    setInterval(() => showGo(showIdx + 1), 5600);
   }
 
   window.t = (key) => (window.I18N[lang] && window.I18N[lang][key]) || key;

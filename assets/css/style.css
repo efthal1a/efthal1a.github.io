@@ -169,11 +169,14 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.1; 
 
 /* rotating capability line */
 .hero-rotor { color: rgba(247,244,236,0.9); font-family: var(--serif); font-size: clamp(1.2rem, 2.4vw, 1.9rem); font-weight: 400; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4ch; max-width: 34ch; }
-.rotor { position: relative; display: inline-flex; overflow: hidden; height: 1.25em; }
-.rotor-word { display: inline-block; color: var(--lime-oil); font-style: italic; font-weight: 600; white-space: nowrap; transition: transform 0.5s var(--ease), opacity 0.5s var(--ease); }
+/* Both words overlap absolutely so the outgoing one never adds to layout width;
+   the container's width is animated to the incoming word instead of snapping. */
+.rotor { position: relative; display: inline-block; overflow: hidden; height: 1.25em; vertical-align: bottom; width: 0; }
+.rotor-word { position: absolute; left: 0; top: 0; color: var(--lime-oil); font-style: italic; font-weight: 600; white-space: nowrap; transition: transform 0.7s var(--ease), opacity 0.7s var(--ease); }
 .rotor-word.out { transform: translateY(-110%); opacity: 0; }
-.rotor-word.in { animation: rotorIn 0.55s var(--ease); }
+.rotor-word.in { animation: rotorIn 0.7s var(--ease); }
 @keyframes rotorIn { from { transform: translateY(110%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .rotor, .rotor-word { transition: none; } .rotor-word.in { animation: none; } }
 
 .hero-cta { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
 .hero-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2rem; }
