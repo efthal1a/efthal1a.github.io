@@ -156,19 +156,12 @@
         <h2 style="font-size:clamp(2rem,4.5vw,3.2rem);margin:.4rem 0 1rem" data-i18n="contact.title">Ας σχεδιάσουμε τον κήπο σας</h2>
         <p class="serif-lead" data-i18n="contact.sub">Πείτε μου λίγα λόγια για τον χώρο και το όραμά σας.</p>
       </div>
-      <form class="contact-form reveal" id="contactForm">
-        <div class="row" style="gap:1.1rem">
-          <div class="field" style="flex:1"><label data-i18n="contact.name">Όνομα</label><input name="name" required /></div>
-          <div class="field" style="flex:1"><label data-i18n="contact.email">Email</label><input type="email" name="email" required /></div>
-        </div>
-        <div class="field"><label data-i18n="contact.subject">Θέμα</label><input name="subject" /></div>
-        <div class="field"><label data-i18n="contact.msg">Μήνυμα</label><textarea name="message" required></textarea></div>
-        <div class="form-status" id="formStatus"></div>
-        <div class="row" style="justify-content:space-between">
-          <button class="btn btn--dark" id="formBtn" type="submit" data-i18n="contact.send">Αποστολή μηνύματος</button>
-          <span class="form-note" data-i18n="contact.note">Το μήνυμά σας στέλνεται απευθείας στο email μου.</span>
-        </div>
-      </form>
+      <div class="contact-card reveal">
+        <p class="contact-label" data-i18n="contact.reach">Στείλτε μήνυμα στο</p>
+        <a class="contact-mail" href="mailto:arnthalia@gmail.com">arnthalia@gmail.com</a>
+        <a class="btn btn--dark" href="mailto:arnthalia@gmail.com?subject=Ερώτημα%20για%20σχεδιασμό%20κήπου" data-i18n="contact.send">Αποστολή email</a>
+        <p class="form-note" data-i18n="contact.note">Απάντηση συνήθως εντός δύο εργάσιμων ημερών.</p>
+      </div>
     </div>
   </section>
 
@@ -196,7 +189,7 @@
 
       <div class="footer-bottom">
         <span>© <span id="year"></span> Efthalia Arnaoutopoulou · <span data-i18n="footer.rights">Με επιφύλαξη κάθε δικαιώματος.</span></span>
-        <span>Crete, Greece</span>
+        <span><a href="mailto:arnthalia@gmail.com">arnthalia@gmail.com</a> · Crete, Greece</span>
       </div>
     </div>
   </footer>

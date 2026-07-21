@@ -332,6 +332,14 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.1; 
 .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--olive-500); box-shadow: 0 0 0 3px rgba(107,135,89,0.15); }
 .field textarea { min-height: 130px; resize: vertical; }
 .form-note { font-size: 0.8rem; color: var(--ink-soft); }
+
+/* contact card — a plain mailto beats a form that can silently drop a lead */
+.contact-card { background: var(--chalk); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(1.6rem, 4vw, 2.6rem); display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; box-shadow: var(--shadow-sm); }
+.contact-label { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft); }
+.contact-mail { font-family: var(--serif); font-size: clamp(1.35rem, 3vw, 2rem); color: var(--olive-700); word-break: break-all; line-height: 1.15; }
+.contact-mail:hover { color: var(--terra-600); }
+.contact-card .btn { margin-top: 1rem; }
+.contact-card .form-note { margin-top: 0.3rem; }
 .form-status { font-size: 0.85rem; padding: 0.6rem 0; min-height: 1.2rem; }
 .form-status.ok { color: var(--olive-600); }
 .form-status.err { color: var(--terra-600); }

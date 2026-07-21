@@ -6,8 +6,6 @@
 
   /* ---- ΡΥΘΜΙΣΕΙΣ (άλλαξέ τα εδώ) ---- */
   const CONFIG = {
-    // Βάλε εδώ το endpoint από το formspree.io (π.χ. https://formspree.io/f/xxxxx)
-    formspree: "https://formspree.io/f/your_form_id",
     dataBase: "data/"
   };
 
@@ -285,39 +283,9 @@
     })
   );
 
-  /* ---------- Contact form (Formspree) ---------- */
-  const form = $("#contactForm");
-  if (form) {
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const status = $("#formStatus");
-      const btn = $("#formBtn");
-      status.className = "form-status";
-      status.textContent = window.I18N[lang]["contact.sending"];
-      btn.disabled = true;
-      try {
-        if (CONFIG.formspree.includes("your_form_id")) {
-          // Δεν έχει ρυθμιστεί ακόμα το Formspree — προσομοίωση επιτυχίας
-          await new Promise((r) => setTimeout(r, 700));
-        } else {
-          const res = await fetch(CONFIG.formspree, {
-            method: "POST",
-            headers: { Accept: "application/json" },
-            body: new FormData(form)
-          });
-          if (!res.ok) throw new Error(res.status);
-        }
-        status.className = "form-status ok";
-        status.textContent = window.I18N[lang]["contact.ok"];
-        form.reset();
-      } catch (err) {
-        status.className = "form-status err";
-        status.textContent = window.I18N[lang]["contact.err"];
-      } finally {
-        btn.disabled = false;
-      }
-    });
-  }
+  /* Contact is a plain mailto link — no handler needed. The previous form posted to an
+     unconfigured Formspree endpoint and faked a success message, so enquiries were lost
+     while the visitor was told they had been sent. */
 
   /* ---------- Helpers ---------- */
   function escapeHTML(s) {
